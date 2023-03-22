@@ -46,35 +46,35 @@ class userHandler
             case "français":
                 this.dir = "fr"
                 this.price = "Prix"
-                this.baseDescription = `Vous avez`
-                this.baseAuthorExt = "Sélectionnez l'extension voulue"
-                this.baseAuthorSerie = "Sélectionnez la série voulue"
-                this.sell = "Vous avez vendu les cartes que vous aviez déjà, vous avez gagné"
-                this.listExt = "Liste des extensions existantes pour cette série"
-                this.new = "Nouvelle carte!"
-                this.serieNumber = "Numéro dans la série"
-                this.notEnoughMoney = "Vous n'avez pas assez d'argent pour acheter ce booster"
-                this.noCardsInThisSerie = "Vous n'avez pas de carte dans cette série"
-                this.noCardsInThisExpansion = "Vous n'avez pas de carte dans cette extension"
-                this.secretCard = "carte secrete"
-                this.secretCards = "cartes secretes"
+                this.baseDescription = `-Vous avez`
+                this.baseAuthorExt = "-Sélectionnez l'extension voulue:"
+                this.baseAuthorSerie = "-Sélectionnez la série voulue:"
+                this.sell = ":weary: Oh Dommage, vous avez déja cette carte...\n\n-Vous avez vendu les cartes que vous aviez déjà, vous avez gagné"
+                this.listExt = "**__Liste des extensions existantes pour cette série:__**"
+                this.new = ":tada: **Félicitations, vous avez une nouvelle carte!**"
+                this.serieNumber = ":diamond_shape_with_a_dot_inside: Numéro dans la série:"
+                this.notEnoughMoney = ":weary: **Vous n'avez pas assez de Pokédollars pour acheter ce booster**"
+                this.noCardsInThisSerie = ":weary: **Oups! Vous n'avez pas de carte dans cette série**"
+                this.noCardsInThisExpansion = ":weary: **Oups! Vous n'avez pas de carte dans cette extension**"
+                this.secretCard = ":star_struck: **carte secrete**"
+                this.secretCards = ":star_struck: **cartes secretes**"
                 break
             case "english":
             default:
                 this.dir = "en"
                 this.price = "Price"
-                this.baseDescription = `You Have`
-                this.baseAuthorExt = "Choose the expansion you want"
-                this.baseAuthorSerie = "Choose the serie you want"
-                this.sell = "You sold the cards that you already had, you earned"
-                this.listExt = "List of the extisting expansions for this serie"
-                this.new = "New card!"
-                this.serieNumber = "Number in the serie"
-                this.notEnoughMoney = "You don't have enough money to buy this booster"
-                this.noCardsInThisSerie = "You don't have any card in this serie"
-                this.noCardsInThisExpansion = "You don't have any carte in this expansion"
-                this.secretCard = "secret card"
-                this.secretCards = "secret cards"
+                this.baseDescription = `-You Have`
+                this.baseAuthorExt = "-Choose the expansion you want:"
+                this.baseAuthorSerie = "-Choose the serie you want:"
+                this.sell = ":weary: Oh Too bad, you already have this card...\n\n-You sold the cards that you already had, you earned"
+                this.listExt = "**__List of the extisting expansions for this serie:__**"
+                this.new = ":tada: **Congratulations you got a new card!**"
+                this.serieNumber = ":diamond_shape_with_a_dot_inside: Number in the serie:"
+                this.notEnoughMoney = ":weary: **You don't have enough Pokédollars to buy this booster**"
+                this.noCardsInThisSerie = ":weary: **Oups! You don't have any card in this serie**"
+                this.noCardsInThisExpansion = ":weary: ***Oups! You don't have any carte in this expansion**"
+                this.secretCard = ":star_struck: **secret card**"
+                this.secretCards = ":star_struck: **secret cards**"
                 break
         }
         this.series = JSON.parse(fs.readFileSync(`cards/${this.dir}/series.json`))
@@ -203,10 +203,11 @@ class userHandler
         var description = ""
         this.extensions = JSON.parse(fs.readFileSync(`cards/${this.dir}/${this.series[this.serie].id}.json`))
         this.embed.setTitle(this.series[this.serie].name)
+        this.embed.setColor("#E67E22")
         this.hasOneCard = false
         if (this.isBuyable)
         {
-            description += `${this.baseDescription} ${this.get("money")} $\n\n`
+            description += `${this.baseDescription} __**${this.get("money")} Pokédollars.**__\n\n`
         }
         description += `${this.listExt}\n\n`
         for (let i = 0; i < this.extensions.length; i++)
@@ -214,7 +215,10 @@ class userHandler
             if ((this.isBuyable || (!this.isBuyable && this.get(this.extensions[i].id) != null)) && this.extensions[i].released)
             {
                 this.hasOneCard = true
-                description += `• ${this.extensions[i].name}\n`
+                description += `:diamond_shape_with_a_dot_inside: ${this.extensions[i].name}\n`
+                this.embed.setColor("#E67E22")
+                this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        
             }
         }
         if (!this.hasOneCard)
@@ -224,7 +228,9 @@ class userHandler
         this.embed.setDescription(description)
         this.embed.setAuthor(this.baseAuthorSerie)
         this.embed.setImage("")
-        this.embed.setFooter(`${this.serie + 1}/${this.series.length}`)
+        this.embed.setColor("#E67E22")
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        this.embed.setFooter(`${this.series[this.serie].name} ${this.serie + 1}/${this.series.length}`)
     }
 
     drawExtension()
@@ -232,7 +238,7 @@ class userHandler
         var description = ""
         if (this.isBuyable)
         {
-            description += `${this.baseDescription} ${this.get("money")} $\n\n${this.price}: ${this.extensions[this.extension].price} $`
+            description += `${this.baseDescription} __**${this.get("money")} Pokédollars**__.\n\n:dollar: ${this.price}: __**${this.extensions[this.extension].price} Pokédollars**__`
             if (this.get("money") < this.extensions[this.extension].price)
             {
                 description += `\n\n${this.notEnoughMoney}`
@@ -244,6 +250,7 @@ class userHandler
             this.hasOneCard = false
             description = this.noCardsInThisExpansion
             this.embed.setImage("")
+            this.embed.setColor("#E67E22")
         }
         else
         {
@@ -252,7 +259,9 @@ class userHandler
         this.embed.setAuthor(this.baseAuthorExt)
         this.embed.setTitle(this.extensions[this.extension].name)
         this.embed.setDescription(description)
-        this.embed.setFooter(`${this.extension + 1}/${this.extensions.length}`)
+        this.embed.setColor("#E67E22")
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        this.embed.setFooter(`${this.extensions[this.extension].name} ${this.extension + 1}/${this.extensions.length}`)
     }
 
     drawCard()
@@ -261,11 +270,13 @@ class userHandler
 
         if (this.moneySell > 0)
         {
-            description += `${this.sell} ${this.moneySell} $\n\n`
+            description += `${this.sell} ${this.moneySell} **Pokédollars**\n\n`
         }
         if (this.isBuyable && this.cardsNew[this.card])
         {
             description += `${this.new}\n\n`
+            this.embed.setColor("#E67E22")
+            this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
         }
         else if (!this.isBuyable)
         {    
@@ -620,11 +631,11 @@ class userHandler
             switch (language)
             {
                 case "français":
-                    this.channel.send("Vous avez reçu 10 $")
+                    this.channel.send(`:moneybag: Vous avez reçu **10 Pokédollars**, votre solde et maintenant de ${this.get("money")} Pokédollars`)
                     break;
                 case "english":
                 default:
-                    this.channel.send("You received 10 $")
+                    this.channel.send(`:moneybag: You received **10 Pokédollars**, your balance and now ${this.get("money")} Pokédollars`)
                     break;
             }
         }
@@ -633,11 +644,11 @@ class userHandler
             switch (language)
             {
                 case "français":
-                    this.channel.send(`Vous devez encore attendre ${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes pour recevoir à nouveau de l'argent`)
+                    this.channel.send(`:x: Vous devez encore attendre **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** pour recevoir à nouveau des Pokédollars`)
                     break;
                 case "english":
                 default:
-                    this.channel.send(`You have to wait ${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes to receive money again`)
+                    this.channel.send(`:x: You have to wait **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** to receive Pokédollars again`)
                     break;
             }
         }

@@ -60,7 +60,7 @@ catch
 
 client.on('ready', () => 
 {
-    console.log(`app.js: Logged in as ${client.user.username}!`)
+    console.log(`Solgaleo-TCG: Logged in as ${client.user.username}!`)
     client.user.setActivity('tcg help', {type: 'PLAYING'})
 })
 

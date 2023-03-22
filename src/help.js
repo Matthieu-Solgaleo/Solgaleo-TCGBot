@@ -25,27 +25,27 @@ class helpHandler
         switch (language)
         {
             case "français":
-                this.commandList = "Liste des commands"
-                this.adminCommandList = "Liste des commandes administrateur"
-                this.viewCommandDescription = "Voir votre collection de carte"
-                this.buyCommandDescription = "Acheter des boosters"
-                this.moneyCommandDescription = "Recevoir 10$ (toutes les heures)"
-                this.languageCommandDescription = "Changer la langue du bot"
-                this.languageListCommandDescription = "Voir la liste des langues supportées"
-                this.prefixCommandDescription = "Changer le prefix du bot"
-                this.deleteMessageCommandDescription = "Désactiver/activer la suppression de message"
+                this.commandList = "Liste des commandes:"
+                this.adminCommandList = "Liste des commandes administrateur:"
+                this.viewCommandDescription = ":arrow_right: Voir votre collection de carte"
+                this.buyCommandDescription = ":arrow_right: Acheter des boosters"
+                this.moneyCommandDescription = ":arrow_right: Recevoir 10 Pokédollars _(toutes les heures)_"
+                this.languageCommandDescription = ":arrow_right: Changer la langue du bot"
+                this.languageListCommandDescription = ":arrow_right: Voir la liste des langues supportées"
+                this.prefixCommandDescription = ":arrow_right: Changer le prefix du bot"
+                this.deleteMessageCommandDescription = ":arrow_right: Désactiver/activer la suppression de message"
                 break
             case "english":
             default:
-                this.commandList = "Command list"
-                this.adminCommandList = "Administrator command list"
-                this.viewCommandDescription = "View your card's collection"
-                this.buyCommandDescription = "Buy new boosters"
-                this.moneyCommandDescription = "Receive 10$ (every hour)"
-                this.languageCommandDescription = "Change the language of the bot"
-                this.languageListCommandDescription = "View the list of supported languages"
-                this.prefixCommandDescription = "Change the bot's prefix"
-                this.deleteMessageCommandDescription = "Enable/disable the deletation of message"
+                this.commandList = "Commands list:"
+                this.adminCommandList = "Administrator commands list:"
+                this.viewCommandDescription = ":arrow_right: View your card's collection"
+                this.buyCommandDescription = ":arrow_right: Buy new boosters"
+                this.moneyCommandDescription = ":arrow_right: Receive 10 Pokédollars _(every hour)_"
+                this.languageCommandDescription = ":arrow_right: Change the language of the bot"
+                this.languageListCommandDescription = ":arrow_right: View the list of supported languages"
+                this.prefixCommandDescription = ":arrow_right: Change the bot's prefix"
+                this.deleteMessageCommandDescription = ":arrow_right: Enable/disable the deletation of message"
                 break
         }
     }
@@ -53,25 +53,31 @@ class helpHandler
     drawAdminHelp()
     {
         this.embed.setTitle(this.adminCommandList)
-        this.embed.setColor("#f7432f")
+        this.embed.setDescription(":gear: __**Voici la liste des commandes Administrateur:**__")
+        this.embed.setColor("#E67E22")
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        this.embed.setFooter("Powered By Solgaleo-TCG | Official BOT created since March 2022 by Matthieu-Solgaleo#3468")
         this.embed.fields = []
         this.embed.addFields(
-            { name: "tcg language", value: this.languageCommandDescription, inline: true},
-            { name: "tcg language list", value: this.languageListCommandDescription, inline: true},
-            { name: "tcg prefix", value: this.prefixCommandDescription},
-            { name: "tcg delete_message", value: this.deleteMessageCommandDescription, inline: true},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg language``", value: this.languageCommandDescription, inline: false },
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg language list``", value: this.languageListCommandDescription, inline: false},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg prefix``", value: this.prefixCommandDescription, inline: false},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg delete_message``", value: this.deleteMessageCommandDescription, inline: false},
         )
     }
 
     drawBasicHelp()
     {
         this.embed.setTitle(this.commandList)
-        this.embed.setColor("#3679f5")
+        this.embed.setDescription(":gear: __**Voici la liste des commandes Utilisateur:**__")
+        this.embed.setColor("#E67E22")
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        this.embed.setFooter("Powered By Solgaleo-TCG | Official BOT created since March 2022 by Matthieu-Solgaleo#3468")
         this.embed.fields = []
         this.embed.addFields(
-            { name: "tcg v || view", value: this.viewCommandDescription, inline: true},
-            { name: "tcg b || buy", value: this.buyCommandDescription, inline: true},
-            { name: "tcg m || money", value: this.moneyCommandDescription},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg v || view``", value: this.viewCommandDescription, inline: false},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg b || buy``", value: this.buyCommandDescription, inline: false},
+            { name: ":diamond_shape_with_a_dot_inside: ``tcg m || money``", value: this.moneyCommandDescription, inline: false},
         )
     }
 
