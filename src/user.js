@@ -46,18 +46,18 @@ class userHandler
             case "français":
                 this.dir = "fr"
                 this.price = "Prix"
-                this.baseDescription = `-Vous avez`
+                this.baseDescription = "-Vous avez"
                 this.baseAuthorExt = "-Sélectionnez l'extension voulue:"
                 this.baseAuthorSerie = "-Sélectionnez la série voulue:"
-                this.sell = ":weary: Oh Dommage, vous avez déja cette carte...\n\n-Vous avez vendu les cartes que vous aviez déjà, vous avez gagné"
+                this.sell = "-Vous avez vendu les cartes que vous avez déjà dans ce paquet, ils vous ont rapporté"
                 this.listExt = "**__Liste des extensions existantes pour cette série:__**"
                 this.new = ":tada: **Félicitations, vous avez une nouvelle carte!**"
                 this.serieNumber = ":diamond_shape_with_a_dot_inside: Numéro dans la série:"
                 this.notEnoughMoney = ":weary: **Vous n'avez pas assez de Pokédollars pour acheter ce booster**"
                 this.noCardsInThisSerie = ":weary: **Oups! Vous n'avez pas de carte dans cette série**"
                 this.noCardsInThisExpansion = ":weary: **Oups! Vous n'avez pas de carte dans cette extension**"
-                this.secretCard = ":star_struck: **carte secrete**"
-                this.secretCards = ":star_struck: **cartes secretes**"
+                this.secretCard = "carte secrete"
+                this.secretCards = "cartes secretes"
                 break
             case "english":
             default:
@@ -66,15 +66,15 @@ class userHandler
                 this.baseDescription = `-You Have`
                 this.baseAuthorExt = "-Choose the expansion you want:"
                 this.baseAuthorSerie = "-Choose the serie you want:"
-                this.sell = ":weary: Oh Too bad, you already have this card...\n\n-You sold the cards that you already had, you earned"
+                this.sell = "-You sold the cards you already have in this deck, they brought you back"
                 this.listExt = "**__List of the extisting expansions for this serie:__**"
                 this.new = ":tada: **Congratulations you got a new card!**"
                 this.serieNumber = ":diamond_shape_with_a_dot_inside: Number in the serie:"
                 this.notEnoughMoney = ":weary: **You don't have enough Pokédollars to buy this booster**"
                 this.noCardsInThisSerie = ":weary: **Oups! You don't have any card in this serie**"
                 this.noCardsInThisExpansion = ":weary: ***Oups! You don't have any carte in this expansion**"
-                this.secretCard = ":star_struck: **secret card**"
-                this.secretCards = ":star_struck: **secret cards**"
+                this.secretCard = "secret card"
+                this.secretCards = "secret cards"
                 break
         }
         this.series = JSON.parse(fs.readFileSync(`cards/${this.dir}/series.json`))
@@ -158,22 +158,22 @@ class userHandler
                                 switch (this.cards[this.card].rarity)
                                 {
                                     case "common":
-                                        this.moneySell += Math.floor(1 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(1* this.extensions[this.extension].price) / 10
                                         break;
                                     case "uncommon":
-                                        this.moneySell += Math.floor(2 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(1 * this.extensions[this.extension].price) / 10
                                         break;
                                     case "rare":
-                                        this.moneySell += Math.floor(5 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(2 * this.extensions[this.extension].price) / 10
                                         break;
                                     case "special":
-                                        this.moneySell += Math.floor(8 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(4 * this.extensions[this.extension].price) / 10
                                         break;
                                     case "ultraRare":
-                                        this.moneySell += Math.floor(12 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(6 * this.extensions[this.extension].price) / 10
                                         break;
                                     case "secret":
-                                        this.moneySell += Math.floor(50 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(20 * this.extensions[this.extension].price) / 10
                                         break;
                                 }
                             }
@@ -397,16 +397,16 @@ class userHandler
 
         // 9th
         var reverse = Math.random()
-        if (reverse > 0.995)
+        if (reverse > 0.70)
         {
             this.cards.push({"id": this.extensions[this.extension].ultraRare[Math.floor(Math.random() * this.extensions[this.extension].ultraRare.length)], "rarity": "ultraRare"})
         }
-        else if (reverse > 0.95)
+        else if (reverse > 0.60)
         {
             this.cards.push({"id": this.extensions[this.extension].special[Math.floor(Math.random() * this.extensions[this.extension].special.length)], "rarity": "special"})
         
         }
-        else if (reverse > 0.65)
+        else if (reverse > 0.50)
         {
             this.cards.push({"id": this.extensions[this.extension].rare[Math.floor(Math.random() * this.extensions[this.extension].rare.length)], "rarity": "rare"})
         }
@@ -427,18 +427,18 @@ class userHandler
         
         // 10th
         var rare = Math.random()
-        if (rare > 0.999 && this.extensions[this.extension].canGetSecret)
+        if (rare > 0.80 && this.extensions[this.extension].canGetSecret)
         {
             this.cards.push({"id": this.extensions[this.extension].secret[Math.floor(Math.random() * this.extensions[this.extension].secret.length)], "rarity": "secret"})
         }
-        else if (rare > 0.995)
+        else if (rare > 0.70)
         {
             card = Math.floor(Math.random() * this.extensions[this.extension].ultraRare.length)
             while (this.extensions[this.extension].ultraRare[card] == this.cards[8].id)
                 card = Math.floor(Math.random() * this.extensions[this.extension].ultraRare.length)
             this.cards.push({"id": this.extensions[this.extension].ultraRare[card], "rarity": "ultraRare"})
         }
-        else if (rare > 0.8)
+        else if (rare > 0.60)
         {
             card = Math.floor(Math.random() * this.extensions[this.extension].special.length)
             while (this.extensions[this.extension].special[card] == this.cards[8].id)
@@ -626,16 +626,16 @@ class userHandler
         var now = Date.now()
         if (now - date >= 1000 * 60 * 60)
         {
-            this.set("money", this.get("money") + 10)
+            this.set("money", this.get("money") + 5)
             this.set("date", now)
             switch (language)
             {
                 case "français":
-                    this.channel.send(`:moneybag: Vous avez reçu **10 Pokédollars**, votre solde et maintenant de ${this.get("money")} Pokédollars`)
+                    this.channel.send(`:moneybag: Vous avez reçu **5 Pokédollars**, votre solde et maintenant de ${this.get("money")} Pokédollars`)
                     break;
                 case "english":
                 default:
-                    this.channel.send(`:moneybag: You received **10 Pokédollars**, your balance and now ${this.get("money")} Pokédollars`)
+                    this.channel.send(`:moneybag: You received **5 Pokédollars**, your balance and now ${this.get("money")} Pokédollars`)
                     break;
             }
         }
