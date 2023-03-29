@@ -1,10 +1,48 @@
 [
     {
+        "name": "Violet et Ecarlate",
+        "id": "EV"
+    },
+    {
         "name": "Épée et Bouclier",
         "id": "SWSH"
     },
     {
         "name": "Soleil et Lune",
         "id": "SM"
+    },
+    {
+        "name": "XY",
+        "id": "XY"
+    },
+    {
+        "name": "Noir et Blanc",
+        "id": "NB"
+    },
+    {
+        "name": "HeartGold SoulSilver",
+        "id": "HS"
+    },
+    {
+        "name": "Platine",
+        "id": "PL"
+    },
+    {
+        "name": "Diamant et Perle",
+        "id": "DP"
+    },
+    {
+        "name": "EX",
+        "id": "EX"
+    },
+    {
+        "name": "Série de Base",
+        "id": "WIZARDS"
+    },
+    {
+        "name": "Promos",
+        "id": "PR"
     }
+
+    
 ]

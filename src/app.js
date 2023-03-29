@@ -165,6 +165,14 @@ client.on('message', msg =>
         handler.view()
         return
     }
+
+    // test
+    if (content == "test" || content == "t")
+    {
+        handler = new test.testHandler(msg.member, channel, guildLanguage)
+        handler.view()
+        return
+    }
 })
 
 client.login(token)

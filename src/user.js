@@ -45,17 +45,17 @@ class userHandler
         {
             case "français":
                 this.dir = "fr"
-                this.price = "Prix"
+                this.price = "-__Prix d'un Booster__"
                 this.baseDescription = "-Vous avez"
                 this.baseAuthorExt = "-Sélectionnez l'extension voulue:"
                 this.baseAuthorSerie = "-Sélectionnez la série voulue:"
                 this.sell = "-Vous avez vendu les cartes que vous avez déjà dans ce paquet, ils vous ont rapporté"
                 this.listExt = "**__Liste des extensions existantes pour cette série:__**"
-                this.new = ":tada: **Félicitations, vous avez une nouvelle carte!**"
-                this.serieNumber = ":diamond_shape_with_a_dot_inside: Numéro dans la série:"
-                this.notEnoughMoney = ":weary: **Vous n'avez pas assez de Pokédollars pour acheter ce booster**"
-                this.noCardsInThisSerie = ":weary: **Oups! Vous n'avez pas de carte dans cette série**"
-                this.noCardsInThisExpansion = ":weary: **Oups! Vous n'avez pas de carte dans cette extension**"
+                this.new = "<:025e:802190141820239872> **Félicitations! Vous avez une nouvelle carte!**"
+                this.serieNumber = "<:201f14shiny:835128903675674624> _Numéro dans la série_"
+                this.notEnoughMoney = ":weary: **Vous n'avez pas assez de <:pkgold:1090031647757447178> pour acheter ce booster**"
+                this.noCardsInThisSerie = ":weary: **Aucune carte dans cette série**"
+                this.noCardsInThisExpansion = ":weary: **Aucune carte dans cette extension**"
                 this.secretCard = "carte secrete"
                 this.secretCards = "cartes secretes"
                 break
@@ -68,9 +68,9 @@ class userHandler
                 this.baseAuthorSerie = "-Choose the serie you want:"
                 this.sell = "-You sold the cards you already have in this deck, they brought you back"
                 this.listExt = "**__List of the extisting expansions for this serie:__**"
-                this.new = ":tada: **Congratulations you got a new card!**"
-                this.serieNumber = ":diamond_shape_with_a_dot_inside: Number in the serie:"
-                this.notEnoughMoney = ":weary: **You don't have enough Pokédollars to buy this booster**"
+                this.new = "<:025e:802190141820239872> **Congratulations you got a new card!**"
+                this.serieNumber = "<:201f14shiny:835128903675674624>: _Number in the serie:_"
+                this.notEnoughMoney = ":weary: **You don't have enough <:pkgold:1090031647757447178> to buy this booster**"
                 this.noCardsInThisSerie = ":weary: **Oups! You don't have any card in this serie**"
                 this.noCardsInThisExpansion = ":weary: ***Oups! You don't have any carte in this expansion**"
                 this.secretCard = "secret card"
@@ -158,7 +158,7 @@ class userHandler
                                 switch (this.cards[this.card].rarity)
                                 {
                                     case "common":
-                                        this.moneySell += Math.floor(1* this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(0.50 * this.extensions[this.extension].price) / 10
                                         break;
                                     case "uncommon":
                                         this.moneySell += Math.floor(1 * this.extensions[this.extension].price) / 10
@@ -207,7 +207,7 @@ class userHandler
         this.hasOneCard = false
         if (this.isBuyable)
         {
-            description += `${this.baseDescription} __**${this.get("money")} Pokédollars.**__\n\n`
+            description += `${this.baseDescription} **${this.get("money")} <:pkgold:1090031647757447178>**\n\n`
         }
         description += `${this.listExt}\n\n`
         for (let i = 0; i < this.extensions.length; i++)
@@ -215,9 +215,9 @@ class userHandler
             if ((this.isBuyable || (!this.isBuyable && this.get(this.extensions[i].id) != null)) && this.extensions[i].released)
             {
                 this.hasOneCard = true
-                description += `:diamond_shape_with_a_dot_inside: ${this.extensions[i].name}\n`
+                description += `${this.extensions[i].name}\n`
                 this.embed.setColor("#E67E22")
-                this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+                this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png")
         
             }
         }
@@ -227,10 +227,11 @@ class userHandler
         }
         this.embed.setDescription(description)
         this.embed.setAuthor(this.baseAuthorSerie)
-        this.embed.setImage("")
+        this.embed.setImage("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Ev%C3%A9nement.png")
         this.embed.setColor("#E67E22")
-        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png")
         this.embed.setFooter(`${this.series[this.serie].name} ${this.serie + 1}/${this.series.length}`)
+        
     }
 
     drawExtension()
@@ -238,7 +239,7 @@ class userHandler
         var description = ""
         if (this.isBuyable)
         {
-            description += `${this.baseDescription} __**${this.get("money")} Pokédollars**__.\n\n:dollar: ${this.price}: __**${this.extensions[this.extension].price} Pokédollars**__`
+            description += `${this.baseDescription} **${this.get("money")} <:pkgold:1090031647757447178>**\n\n${this.price}: **${this.extensions[this.extension].price} <:pkgold:1090031647757447178>**`
             if (this.get("money") < this.extensions[this.extension].price)
             {
                 description += `\n\n${this.notEnoughMoney}`
@@ -260,8 +261,8 @@ class userHandler
         this.embed.setTitle(this.extensions[this.extension].name)
         this.embed.setDescription(description)
         this.embed.setColor("#E67E22")
-        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
-        this.embed.setFooter(`${this.extensions[this.extension].name} ${this.extension + 1}/${this.extensions.length}`)
+        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png")
+        this.embed.setFooter(`${this.extension + 1}/${this.extensions.length}`)
     }
 
     drawCard()
@@ -270,17 +271,17 @@ class userHandler
 
         if (this.moneySell > 0)
         {
-            description += `${this.sell} ${this.moneySell} **Pokédollars**\n\n`
+            description += `${this.sell} ${this.moneySell} **<:pkgold:1090031647757447178>**\n\n`
         }
         if (this.isBuyable && this.cardsNew[this.card])
         {
             description += `${this.new}\n\n`
             this.embed.setColor("#E67E22")
-            this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Image%20bonne%20.png")
+            this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png")
         }
         else if (!this.isBuyable)
         {    
-            description += `${this.serieNumber}: ${this.cards[this.card].id}/${this.extensions[this.extension].size}`
+            description += `**__Votre Collection:__**\n\n${this.serieNumber}: ${this.cards[this.card].id}/${this.extensions[this.extension].size}`
         }
         this.embed.setDescription(description)
         if (this.extensions[this.extension].fixNumber)
@@ -321,15 +322,15 @@ class userHandler
             }
             if (secret == 1)
             {
-                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size} & ${secret} ${this.secretCard}`)
+                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size} cartes et ${secret} ${this.secretCard}.`)
             }
             else if (secret > 1)
             {
-                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size} & ${secret} ${this.secretCards}`)
+                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size} cartes et ${secret} ${this.secretCards}.`)
             }
             else
             {
-                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size}`)
+                this.embed.setFooter(`${this.baseDescription} ${base}/${this.extensions[this.extension].size} cartes.`)
             }
         }
         this.embed.setAuthor("")
@@ -626,16 +627,16 @@ class userHandler
         var now = Date.now()
         if (now - date >= 1000 * 60 * 60)
         {
-            this.set("money", this.get("money") + 5)
+            this.set("money", this.get("money") + 10)
             this.set("date", now)
             switch (language)
             {
                 case "français":
-                    this.channel.send(`:moneybag: Vous avez reçu **5 Pokédollars**, votre solde et maintenant de ${this.get("money")} Pokédollars`)
+                    this.channel.send(`<:52:835126299936030770> Vous avez reçu **10 <:pkgold:1090031647757447178>**, Votre solde et maintenant de **${this.get("money")}** <:pkgold:1090031647757447178>`)
                     break;
                 case "english":
                 default:
-                    this.channel.send(`:moneybag: You received **5 Pokédollars**, your balance and now ${this.get("money")} Pokédollars`)
+                    this.channel.send(`<:52:835126299936030770> You received **10 <:pkgold:1090031647757447178>**, Your balance and now **${this.get("money")}** <:pkgold:1090031647757447178>`)
                     break;
             }
         }
@@ -644,11 +645,11 @@ class userHandler
             switch (language)
             {
                 case "français":
-                    this.channel.send(`:x: Vous devez encore attendre **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** pour recevoir à nouveau des Pokédollars`)
+                    this.channel.send(`<:ATT:1090069924480827442> Vous devez encore attendre **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** pour recevoir à nouveau des <:pkgold:1090031647757447178>`)
                     break;
                 case "english":
                 default:
-                    this.channel.send(`:x: You have to wait **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** to receive Pokédollars again`)
+                    this.channel.send(`<:ATT:1090069924480827442> You have to wait **${Math.floor((date + 60 * 60 * 1000 - now) / 1000 / 60)} minutes** to receive <:pkgold:1090031647757447178> again`)
                     break;
             }
         }

@@ -1,0 +1,19 @@
+[
+    {
+        "name": " <:jap:1090040341706592327> <:SVP:1090026663582109696> SV-P Promotional JAP ",
+        "price": 50,
+        "id": "SVP",
+        "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SVP.png",
+        "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/Scarlet%20%26%20Violet%20Promotional%20Cards%20(SVP)/SVP_(JAP)_",
+        "released": true,
+        "fixNumber": false,
+        "common": [8,13,14,15,16,21,22,24,25,26,27,28,29,30,31],
+        "uncommon": [2,3,4,10,11,18,19,20],
+        "rare": [6,9,12,23],
+        "special": [5,7,17],
+        "ultraRare": [1,32,33,34],
+        "size": 34,
+        "canGetSecret": false,
+        "secret": []
+    }
+]

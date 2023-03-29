@@ -5,6 +5,7 @@ const prefix = require('./src/prefix.js')
 const language = require('./src/language.js');
 const user = require('./src/user.js')
 const help = require('./src/help.js')
+const shop = require('./src/shop.js')
 const deleteMessage = require('./src/deleteMessage.js')
 const dotenv = require('dotenv')
 
@@ -168,6 +169,14 @@ client.on('message', msg =>
         handler.view()
         return
     }
+    // shop
+    if (content == "shop" || content == "s")
+    {
+        handler = new shop.shopHandler(msg.member, channel, guildLanguage)
+        handler.view()
+        return
+    }
+    
 })
 
 client.login(process.env.BOT_TOKEN);

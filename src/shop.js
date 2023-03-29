@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 
-class helpHandler
+
+class shopHandler
 {
     embed = new Discord.MessageEmbed()
     channel
@@ -50,24 +51,9 @@ class helpHandler
         }
     }
 
-    drawAdminHelp()
-    {
-        this.embed.setTitle(this.adminCommandList)
-        this.embed.setDescription("<:601:835133502839848970> __**Voici la liste des commandes Administrateur:**__")
-        this.embed.setColor("#E67E22")
-        this.embed.setThumbnail("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png")
-        this.embed.setFooter("Powered By Solgaleo-TCG | Official BOT created since March 2022 by Matthieu-Solgaleo#3468")
-        this.embed.setImage("https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Ev%C3%A9nement.png")
-        this.embed.fields = []
-        this.embed.addFields(
-            { name: "<:599:835133500545826826> ``tcg language``", value: this.languageCommandDescription, inline: false },
-            { name: "<:599:835133500545826826> ``tcg language list``", value: this.languageListCommandDescription, inline: false},
-            { name: "<:599:835133500545826826> ``tcg prefix``", value: this.prefixCommandDescription, inline: false},
-            { name: "<:599:835133500545826826> ``tcg delete_message``", value: this.deleteMessageCommandDescription, inline: false},
-        )
-    }
+    
 
-    drawBasicHelp()
+    drawBasictest()
     {
         this.embed.setTitle(this.commandList)
         this.embed.setDescription("<:601:835133502839848970> __**Voici la liste des commandes Utilisateur:**__")
@@ -80,12 +66,15 @@ class helpHandler
             { name: "<:599:835133500545826826> ``tcg v`` || ``view``", value: this.viewCommandDescription, inline: false},
             { name: "<:599:835133500545826826> ``tcg b`` || ``buy``", value: this.buyCommandDescription, inline: false},
             { name: "<:599:835133500545826826> ``tcg m`` || ``money``", value: this.moneyCommandDescription, inline: false},
+        
         )
+        
+
     }
 
     createMessage()
     {
-        this.drawBasicHelp()
+        this.drawBasictest()
         if (!this.isAdmin)
         {
             this.channel.send(this.embed)
@@ -94,39 +83,7 @@ class helpHandler
         {
             this.channel.send(this.embed).then(msg =>
             {
-                msg.react('⬅').then(r =>
-                {
-                    msg.react('➡').then(() =>
-                    {
-                        const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅' && user.id === this.authorId
-                        const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡' && user.id === this.authorId
-
-                        const backwards = msg.createReactionCollector(backwardsFilter)
-                        const forwards = msg.createReactionCollector(forwardsFilter)
-
-                        backwards.on('collect', (r, _) =>
-                        {
-                            if (this.isViewingAdminPage)
-                            {
-                                this.drawBasicHelp()
-                                msg.edit(this.embed)
-                                r.users.remove(r.users.cache.filter(u => u !== msg.author).first())
-                                this.isViewingAdminPage = false
-                            }
-                        })
-
-                        forwards.on('collect', (r, _) =>
-                        {
-                            if (!this.isViewingAdminPage)
-                            {
-                                this.drawAdminHelp()
-                                msg.edit(this.embed)
-                                r.users.remove(r.users.cache.filter(u => u !== msg.author).first())
-                                this.isViewingAdminPage = true
-                            }
-                        })
-                    })
-                })
+                
             })  
         }
     }
@@ -137,4 +94,4 @@ class helpHandler
     }
 }
 
-module.exports = { helpHandler }
+module.exports = { shopHandler }
