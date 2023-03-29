@@ -100,53 +100,54 @@ Si vous aimez ce référentiel, n'hésitez pas à laisser une étoile ⭐ pour m
 - Pokemon Rumble❌
 
 ⏺ Série HeartGold & SoulSilver ⏺
-- HeartGold SoulSilver❌
-- HS Déchaînement❌
-- HS Indomptable❌
-- HS Triomphe❌
-- L´appel des legendes❌
+- HeartGold SoulSilver✅
+- HS Déchaînement✅
+- HS Indomptable✅
+- HS Triomphe✅
+- L´appel des legendes✅
 - HS Kit des dresseurs❌
 
 ⏺ Série Noir & Blanc ⏺
-- Noir & Blanc❌
-- Noir & Blanc Pouvoirs Émergents❌
-- Noir & Blanc Nobles Victoires❌
-- Noir & Blanc Destinées Futures❌
-- Noir & Blanc Explorateurs Obscurs❌
-- Noir & Blanc Dragons Exaltés❌
-- Noir & Blanc Frontières Franchies❌
-- Noir & Blanc Tempête Plasma❌
-- Noir & Blanc Glaciation Plasma❌
-- Noir & Blanc Explosion Plasma❌
-- Noir & Blanc Trésors Légendaires❌
+- Noir & Blanc✅
+- Noir & Blanc Pouvoirs Émergents✅
+- Noir & Blanc Nobles Victoires✅
+- Noir & Blanc Destinées Futures✅
+- Noir & Blanc Explorateurs Obscurs✅
+- Noir & Blanc Dragons Exaltés✅
+- Noir & Blanc Frontières Franchies✅
+- Noir & Blanc Tempête Plasma✅
+- Noir & Blanc Glaciation Plasma✅
+- Noir & Blanc Explosion Plasma✅
+- Noir & Blanc Trésors Légendaires✅
 - Noir & Blanc Kit du dresseur❌
-- Coffre des dragons❌
+- Coffre des dragons✅
 
 ⏺ Série XY ⏺
-- XY Bienvenue à Kalos❌
-- XY Étincelles❌
-- XY Poings Furieux❌
-- XY Vigueur Spectrale❌
-- XY Primo-Choc❌
-- XY Ciel Rugissant❌
-- XY Origines Antiques❌
-- XY Impulsion TURBO❌
-- XY Rupture TURBO❌
-- XY Impact des Destins❌
-- XY Offensive Vapeur❌
-- XY Évolutions❌
-- Double Danger❌
-- Générations❌
+- XY Bienvenue à Kalos✅
+- XY ✅
+- XY Étincelles✅
+- XY Poings Furieux✅
+- XY Vigueur Spectrale✅
+- XY Primo-Choc✅
+- XY Ciel Rugissant✅
+- XY Origines Antiques✅
+- XY Impulsion TURBO✅
+- XY Rupture TURBO✅
+- XY Impact des Destins✅
+- XY Offensive Vapeur✅
+- XY Évolutions✅
+- Double Danger✅
+- Générations✅
 - XY Kit du Dresseur❌
 - XY Kit du Dresseur: Scalproie et Grodoudou❌
 - XY Kit du Dresseur: Latias & Latios❌
 - XY Kit du Dresseur: Pikachu Catcheur et Suicune❌
 
 ⏺ Série Soleil et Lune ⏺
-- Soleil et Lune❌
-- Soleil et Lune Gardiens Ascendants❌
-- Soleil et Lune Ombres Ardentes❌
-- Soleil et Lune Invasion Carmin❌
+- Soleil et Lune✅
+- Soleil et Lune Gardiens Ascendants✅
+- Soleil et Lune Ombres Ardentes✅
+- Soleil et Lune Invasion Carmin✅
 - Soleil et Lune Ultra-Prisme❌
 - Soleil et Lune Lumière Interdite❌
 - Soleil et Lune Tempête Céleste❌
@@ -155,10 +156,10 @@ Si vous aimez ce référentiel, n'hésitez pas à laisser une étoile ⭐ pour m
 - Soleil et Lune Alliance Infaillible❌
 - Soleil et Lune Harmonie des Esprits❌
 - Soleil et Lune Éclipse Cosmique❌
-- Légendes Brillantes❌
+- Légendes Brillantes✅
 - Majesté des Dragons❌
 - Destinées Occultes❌
-- Detective Pikachu❌
+- Detective Pikachu✅
 - Soleil et Lune Kit du Dresseur: Lougaroc et Raichu d'Alola❌
 - Soleil et Lune Kit du Dresseur: Sablaireau d'Alola et Feunard d'Alola❌
 
@@ -168,18 +169,18 @@ Si vous aimez ce référentiel, n'hésitez pas à laisser une étoile ⭐ pour m
 - Épée et Bouclier Ténèbres Embrasées❌
 - Épée et Bouclier Voltage Éclatant❌
 - Épée et Bouclier Styles de Combat❌
-- Épée et Bouclier Règne de Glace❌
+- Épée et Bouclier Règne de Glace✅
 - Épée et Bouclier Évolution Céleste❌
-- Épée et Bouclier Poing de Fusion❌
-- Épée et Bouclier Stars Étincelantes❌
-- Épée et Bouclier Astres Radieux❌
-- Épée et Bouclier Origine Perdue❌
-- Épée et Bouclier Tempête Argentée❌
+- Épée et Bouclier Poing de Fusion✅
+- Épée et Bouclier Stars Étincelantes✅
+- Épée et Bouclier Astres Radieux✅
+- Épée et Bouclier Origine Perdue✅
+- Épée et Bouclier Tempête Argentée✅
 - La Voie du Maître❌
 - Destinées Radieuses❌
 - Célébrations❌
-- Pokémon GO❌
-- Zénith Suprême❌
+- Pokémon GO✅
+- Zénith Suprême✅
 - Pokémon Futsal❌
 
 ⏺ Série Écarlate et Violet ⏺
@@ -189,8 +190,8 @@ Si vous aimez ce référentiel, n'hésitez pas à laisser une étoile ⭐ pour m
 - Promo Wizards❌
 - Promo Nintendo❌
 - Promo DP❌
-- Promo HGSS❌
-- Promo BW❌
+- Promo HGSS✅
+- Promo BW✅
 - Promo XY❌
 - Promo SM❌
 - Promo SWSH❌
