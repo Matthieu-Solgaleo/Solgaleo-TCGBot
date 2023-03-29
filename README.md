@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Matthieu-Solgaleo/Solgaleo-TCGBot">
-    <img src="https://raw.githubusercontent.com/Matthieu-Solgaleo/Solgaleo-TCGBot/main/data/Image%20bonne%20.png" alt="Pbot-plus" width="700" height="250">
+    <img src="https://raw.githubusercontent.com/Matthieu-Solgaleo/solgaleo-bot-IMG/main/Solgaleo-TCG.png" alt="Pbot-plus" width="700" height="250">
   </a>
 
   <h3 align="center">Solgaleo-TCGBot</h3>
