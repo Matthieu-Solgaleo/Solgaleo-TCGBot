@@ -31,7 +31,7 @@ class userHandler
     noCardsInThisExpansion
     hasOneCard = false
     authorId
-    delete_message = false
+    delete_message = true
     secretCard
     secretCards
 
@@ -158,22 +158,22 @@ class userHandler
                                 switch (this.cards[this.card].rarity)
                                 {
                                     case "common":
-                                        this.moneySell += Math.floor(0.50 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(10 / 10)
                                         break;
                                     case "uncommon":
-                                        this.moneySell += Math.floor(1 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(20 / 10)
                                         break;
                                     case "rare":
-                                        this.moneySell += Math.floor(2 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(30 / 10)
                                         break;
                                     case "special":
-                                        this.moneySell += Math.floor(4 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(40 / 10)
                                         break;
                                     case "ultraRare":
-                                        this.moneySell += Math.floor(6 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(50 / 10)
                                         break;
                                     case "secret":
-                                        this.moneySell += Math.floor(20 * this.extensions[this.extension].price) / 10
+                                        this.moneySell += Math.floor(60 / 10)
                                         break;
                                 }
                             }

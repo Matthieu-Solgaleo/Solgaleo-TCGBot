@@ -1,20 +1,20 @@
 [
     {
-        "name": "<:fre:1090042049916588132> ",
-        "price": 0,
-        "id": "",
-        "image": "",
-        "cardsBaseImage": "",
-        "released": false,
+        "name": "<:fre:1090042049916588132> <:SM12:1093305018947485796> Éclipse Cosmique",
+        "price": 15,
+        "id": "SM12",
+        "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/CEC.png",
+        "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/E%CC%81clipse%20Cosmique%20(CEC)/CEC_",
+        "released": true,
         "fixNumber": false,
-        "common": [],
-        "uncommon": [],
-        "rare": [],
-        "special": [],
-        "ultraRare": [],
-        "size": 233,
+        "common": [2,5,7,13,15,17,18,23,26,31,36,39,40,43,45,47,49,50,54,58,59,64,66,68,71,74,76,78,80,83,87,89,91,93,99,100,105,106,107,108,114,116,119,121,123,125,126,128,130,132,134,137,146,147,149,150,153,160,161,166,167,169,171,174,177,179,181],
+        "uncommon": [3,6,9,10,12,14,19,24,25,29,32,34,37,41,42,51,55,65,70,73,81,84,86,96,98,101,109,111,118,120,133,135,140,141,144,151,162,168,170,173,175,183,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,205,206,207,208,209],
+        "rare": [8,11,27,28,33,44,46,48,52,53,56,57,60,67,72,77,79,88,90,92,94,97,103,112,113,117,122,127,131,138,148,154,155,159,172,178,180,182],
+        "special": [16,20,21,30,61,62,69,82,85,102,104,115,124,136,139,142,145,152,163,164,176,204],
+        "ultraRare": [1,4,22,35,38,63,75,95,110,129,143,156,157,158,165,184,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236],
+        "size": 272,
         "canGetSecret": true,
-        "secret": []
+        "secret": [237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272]
     },
     {
         "name": "<:fre:1090042049916588132> <:SM115:1093308347685544118> Destinées Occultes",
@@ -35,7 +35,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM11:1093305020239319153> Harmonie des Esprits ",
-        "price": 15,
+        "price": 30,
         "id": "SM11",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/UNM.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Harmonie%20des%20Esprits%20(UNM)/UNM_",
@@ -52,7 +52,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM10:1090682983398256812> Alliance Infaillible",
-        "price": 15,
+        "price": 30,
         "id": "SM10",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/UNB.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Alliance%20Infaillible%20(UNB)/UNB_",
@@ -69,7 +69,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM09:1090682351819968604> Duo de Choc",
-        "price": 15,
+        "price": 30,
         "id": "SM09",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/TEU.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Duo%20de%20Choc%20(TEU)/TEU_",
@@ -87,7 +87,7 @@
     
     {
         "name": "<:fre:1090042049916588132> <:SM08:1090681480067420301> Tonnerre Perdu",
-        "price": 15,
+        "price": 30,
         "id": "SM08",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/LOT.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Tonnerre%20Perdu%20(LOT)/LOT_",
@@ -104,7 +104,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM75:1090680596013002825> Majesté des Dragons",
-        "price": 15,
+        "price": 30,
         "id": "SM75",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/DRM.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Majest%C3%A9%20des%20Dragons%20(DRM)/DRM_",
@@ -121,7 +121,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM07:1090679868208980028> Tempête Céleste",
-        "price": 15,
+        "price": 30,
         "id": "SM07",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/CES.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Temp%C3%AAte%20Celeste%20(CES)/CES_",
@@ -138,7 +138,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM06:1090679134956552302> Lumière Interdite",
-        "price": 15,
+        "price": 30,
         "id": "SM06",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/FLI.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Lumi%C3%A8re%20Interdite%20(FLI)/FLI_",
@@ -155,7 +155,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM05:1090676092316172410> Ultra-Prisme",
-        "price": 15,
+        "price": 30,
         "id": "SM05",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/UPR.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Ultra-Prisme%20(UPR)/UPR_",
@@ -172,7 +172,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM04:1090426758857244732> Invasion Carmin",
-        "price": 15,
+        "price": 30,
         "id": "SM04",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/CIN.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Invasion%20Carmin%20(CIN)/CIN_",
@@ -189,7 +189,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SLE:1090421982828445787> Légendes Brillantes",
-        "price": 15,
+        "price": 30,
         "id": "SLG",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SLG.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Le%CC%81gendes%20Brillantes%20(SLG)/SLG_",
@@ -206,7 +206,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM03:1090418324887842826> Ombres Ardentes",
-        "price": 15,
+        "price": 30,
         "id": "SM03",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/BUS.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Ombres%20Ardentes%20(BUS)/BUS_",
@@ -223,7 +223,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM02:1090415250924371998> Gardiens Ascendants",
-        "price": 15,
+        "price": 30,
         "id": "SM02",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/GRI.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Gardiens%20Ascendants%20(GRI)/GR_",
@@ -240,7 +240,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SM01:1090402074245734493> Soleil et Lune",
-        "price": 15,
+        "price": 30,
         "id": "SM01",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SUM.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/Soleil%20et%20Lune%20(SUM)/SUM_",

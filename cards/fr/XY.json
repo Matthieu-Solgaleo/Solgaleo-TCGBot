@@ -1,7 +1,7 @@
 [
     {
         "name": "<:fre:1090042049916588132> <:EVO:1089960118583570572> Evolutions",
-        "price": 10,
+        "price": 25,
         "id": "EVO",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/EVO.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/E%CC%81volutions%20(EVO)/EVO_",
@@ -18,7 +18,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:STS:1090022542162538567> Offensive Vapeur",
-        "price": 10,
+        "price": 25,
         "id": "STS",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/STS.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Offensive%20Vapeur%20(STS)/STS_",
@@ -35,7 +35,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:FAC:1089964096402751621> Impact des Destins",
-        "price": 10,
+        "price": 25,
         "id": "FCO",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/FCO.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Impact%20des%20Destins%20(FCO)/FCO_",
@@ -52,7 +52,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:GNR:1089962045073535068> Générations",
-        "price": 10,
+        "price": 25,
         "id": "GEN",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/GEN.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/G%C3%A9n%C3%A9rations%20(GEN)/GEN_",
@@ -69,7 +69,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:BKP:1089957784474374164> Rupture Turbo",
-        "price": 10,
+        "price": 25,
         "id": "BKP",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/BKP.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Rupture%20TURBO%20(BKP)/BKP_",
@@ -86,7 +86,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:BKT:1089955214699806760> Impulsion Turbo",
-        "price": 10,
+        "price": 25,
         "id": "BKT",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/BKT.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Impulsion%20TURBO%20(BKT)/BKT_",
@@ -103,7 +103,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:AOR:1089566198523494627> Origines Antiques",
-        "price": 10,
+        "price": 25,
         "id": "AOR",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/AOR.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Origines%20Antiques%20(AOR)/AOR_",
@@ -120,7 +120,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:ROS:1089564598518157312> Ciel Rugissant",
-        "price": 10,
+        "price": 25,
         "id": "ROS",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/ROS.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Ciel%20Rugissant%20(ROS)/ROS_",
@@ -137,7 +137,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:DCR:1089557079653634082> Double Danger",
-        "price": 10,
+        "price": 25,
         "id": "DCR",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/DCR.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Double%20Danger%20(DCR)/DCR_",
@@ -154,7 +154,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:PRC:1089553178405650522> Primo Choc",
-        "price": 10,
+        "price": 25,
         "id": "PRC",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/PRC.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Primo-Choc%20(PRC)/",
@@ -171,7 +171,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:PHF:1089550940312457226> Vigueur Spectrale",
-        "price": 10,
+        "price": 25,
         "id": "PHF",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/PHF.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Vigueur%20Spectrale%20(PHF)/",
@@ -188,7 +188,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:FFI:1089549407151734884> Poings Furieux",
-        "price": 10,
+        "price": 25,
         "id": "FFI",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/FFI.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Poings%20Furieux%20(FFI)/",
@@ -205,7 +205,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:FLF:1089546804653207632> Etincelles",
-        "price": 10,
+        "price": 25,
         "id": "FLF",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/FLF.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/E%CC%81tincelles%20(FLF)/",
@@ -222,7 +222,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:XY:1089544530442862623> XY",
-        "price": 10,
+        "price": 25,
         "id": "XY",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/XY.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/XY%20(XY)/",
@@ -239,7 +239,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:KSS:1089541697895141517> Bienvenu à Kalos",
-        "price": 10,
+        "price": 25,
         "id": "KSS",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/KSS.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/XY/Bienvenue%20a%CC%80%20Kalos%20(KSS)/",

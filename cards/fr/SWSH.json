@@ -1,7 +1,7 @@
 [
     {
         "name": "<:fre:1090042049916588132> <:CRZ:1089533692218724462> Zénith Suprême",
-        "price": 10,
+        "price": 40,
         "id": "CRZ",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/CRZ.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Z%C3%A9nith%20Supr%C3%AAme%20(CRZ)/",
@@ -18,7 +18,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:SIT:1089533738360250459> Tempête Argentée",
-        "price": 10,
+        "price": 40,
         "id": "SIT",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SIT.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Tempe%CC%82te%20Argente%CC%81e%20(SIT)/",
@@ -35,7 +35,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:LOR:1089533804865142885> Origine Perdue",
-        "price": 10,
+        "price": 40,
         "id": "LOR",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/LOR.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Origine%20Perdue%20(LOR)/",
@@ -52,7 +52,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:PGO:1089533893499166801> Pokémon GO",
-        "price": 10,
+        "price": 40,
         "id": "PGO",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/PGO.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Poke%CC%81mon%20GO%20(PGO)/",
@@ -69,7 +69,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:ASR:1089533934687223840> Astres Radieux",
-        "price": 10,
+        "price": 40,
         "id": "ASR",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/ASR.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Astres%20Radieux%20(ASR)/",
@@ -86,7 +86,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:BRS:1089533972540837978> Stars Étincelantes",
-        "price": 10,
+        "price": 40,
         "id": "BRS",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/BRS.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Stars%20%C3%89tincelantes%20(BRS)/",
@@ -103,7 +103,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:FST:1089534021731627040> Poing de Fusion",
-        "price": 10,
+        "price": 40,
         "id": "FST",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/FST.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Poing%20de%20Fusion%20(FST)/",
@@ -120,7 +120,7 @@
     },
     {
         "name": "Célébration",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -137,7 +137,7 @@
     },
     {
         "name": "Evolution Céleste",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -154,7 +154,7 @@
     },
     {
         "name": "<:fre:1090042049916588132> <:CRE:1089534069714456676> Régne de Glace",
-        "price": 10,
+        "price": 40,
         "id": "CRE",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/CRE.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/SWSH/Re%CC%80gne%20de%20Glace%20(CRE)/",
@@ -171,7 +171,7 @@
     },
     {
         "name": "Styles de Combat",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -188,7 +188,7 @@
     },
     {
         "name": "Destinées Radieuses",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -205,7 +205,7 @@
     },
     {
         "name": "Voltage Eclatant",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -222,7 +222,7 @@
     },
     {
         "name": "La voie du Maître",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -239,7 +239,7 @@
     },
     {
         "name": "Ténèbres Embrasées",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -256,7 +256,7 @@
     },
     {
         "name": "Clash des Rebelles",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",
@@ -273,7 +273,7 @@
     },
     {
         "name": "Epée et Bouclier",
-        "price": 0,
+        "price": 40,
         "id": "",
         "image": "",
         "cardsBaseImage": "",

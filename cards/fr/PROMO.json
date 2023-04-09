@@ -1,7 +1,7 @@
 [
     {
         "name": "<:jap:1090040341706592327> <:SVAM:1090764128181813378> Starter Set Sprigatito & Lucario",
-        "price": 20,
+        "price": 50,
         "id": "SVAM",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SVAM.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/ex%20Starter%20Set%20Sprigatito%20%26%20Lucario%20ex%20(SVAM)/SVAM_",
@@ -18,7 +18,7 @@
     },
     {
         "name": "<:jap:1090040341706592327> <:SVAL:1090764125233225830> Starter Set Fuecoco & Ampharos",
-        "price": 20,
+        "price": 50,
         "id": "SVAL",
         "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SVAL.png",
         "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/ex%20Starter%20Set%20Fuecoco%20%26%20Ampharos%20ex%20(SVAL)/SVAL_",
@@ -35,7 +35,7 @@
     },
     {
     "name": "<:jap:1090040341706592327> <:SVAW:1090764129620467813> Starter Set Quaxly & Mimikyu",
-    "price": 20,
+    "price": 50,
     "id": "SVAW",
     "image": "https://www.pokecardex.com/assets/images/logos_jp/SVAW.png",
     "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/ex%20Starter%20Set%20Quaxly%20%26%20Mimikyu%20ex%20(SVAW)/SVAW_",
@@ -55,7 +55,7 @@
     "price": 50,
     "id": "SVP",
     "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/SVP.png",
-    "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/Scarlet%20%26%20Violet%20Promotional%20Cards%20(SVP)/SVP_(JAP)_",
+    "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Violet%20Ecarlate%20JAP/Scarlet%20%26%20Violet%20Promotional%20Cards%20(SVP)/SVP_",
     "released": true,
     "fixNumber": false,
     "common": [8,13,14,15,16,21,22,24,25,26,27,28,29,30,31],
@@ -69,7 +69,7 @@
 },
 {
     "name": "<:fre:1090042049916588132> <:DET:1089953620298055831> Détective Pikachu",
-    "price": 15,
+    "price": 50,
     "id": "DET",
     "image": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Logos/DET.png",
     "cardsBaseImage": "https://raw.githubusercontent.com/Matthieu-Solgaleo/Asset/main/Sun%20%26%20Moon/De%CC%81tective%20Pikachu%20(DET)/DET_",
